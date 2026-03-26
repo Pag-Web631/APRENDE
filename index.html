@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aprende Programación</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* BODY */
+body {
+    background: #f0f2f5;
+}
+
+/* NAVBAR */
+.navbar {
+    background: #1877f2;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.search {
+    padding: 6px;
+    border-radius: 20px;
+    border: none;
+    width: 200px;
+}
+
+/* LAYOUT */
+.container {
+    display: flex;
+    margin-top: 20px;
+}
+
+/* SIDEBAR */
+.sidebar {
+    width: 25%;
+    padding: 20px;
+}
+
+.sidebar div {
+    padding: 10px;
+    margin-bottom: 10px;
+    background: white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/* FEED */
+.feed {
+    width: 50%;
+}
+
+/* POST */
+.post {
+    background: white;
+    margin-bottom: 15px;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.post h3 {
+    margin-bottom: 10px;
+}
+
+.post p {
+    margin-bottom: 10px;
+}
+
+.code {
+    background: #1e293b;
+    color: #38bdf8;
+    padding: 10px;
+    border-radius: 8px;
+    font-family: monospace;
+}
+
+/* RIGHT */
+.right {
+    width: 25%;
+    padding: 20px;
+}
+
+.card {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+/* BOTON */
+.btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background: #1877f2;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<div class="navbar">
+    <div class="logo">CodeBook</div>
+    <input type="text" class="search" placeholder="Buscar programación...">
+</div>
+
+<div class="container">
+
+    <!-- SIDEBAR -->
+    <div class="sidebar">
+        <div><i class="fas fa-home"></i> Inicio</div>
+        <div><i class="fas fa-code"></i> HTML</div>
+        <div><i class="fas fa-paint-brush"></i> CSS</div>
+        <div><i class="fas fa-laptop-code"></i> JavaScript</div>
+    </div>
+
+    <!-- FEED -->
+    <div class="feed">
+
+        <div class="post">
+            <h3>📘 ¿Qué es HTML?</h3>
+            <p>HTML es el lenguaje que estructura las páginas web.</p>
+            <div class="code">
+&lt;h1&gt;Hola Mundo&lt;/h1&gt;
+            </div>
+        </div>
+
+        <div class="post">
+            <h3>🎨 ¿Qué es CSS?</h3>
+            <p>CSS se usa para dar estilo a las páginas web.</p>
+            <div class="code">
+h1 { color: blue; }
+            </div>
+        </div>
+
+        <div class="post">
+            <h3>🔥 Consejo</h3>
+            <p>Aprende HTML primero, luego CSS y después JavaScript.</p>
+        </div>
+
+    </div>
+
+    <!-- DERECHA -->
+    <div class="right">
+        <div class="card">
+            <h3>📚 Aprende rápido</h3>
+            <p>Practica todos los días.</p>
+            <button class="btn">Empezar</button>
+        </div>
+
+        <div class="card">
+            <h3>💡 Tip</h3>
+            <p>Construye proyectos reales.</p>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
